@@ -66,6 +66,8 @@ Capturas de laravel
 <img width="1893" height="876" alt="image" src="https://github.com/user-attachments/assets/d282f93a-fc57-4024-8047-9cd9970a47bd" />
 <img width="1437" height="572" alt="image" src="https://github.com/user-attachments/assets/df0b28b9-0f48-454b-bec1-889fc7acc699" />
 <img width="1428" height="570" alt="image" src="https://github.com/user-attachments/assets/0480407d-a1f0-4c60-9783-7923575fadd3" />
+<img width="1912" height="725" alt="image" src="https://github.com/user-attachments/assets/ef9d0337-758f-4659-b231-8439a5c67eff" />
+
 
 
 
