@@ -1,58 +1,80 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laboratorio DS7: Sistema de Autenticación con Laravel 
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este proyecto corresponde al Laboratorio 2 del curso de Desarrollo de Software VII. Consiste en la implementación de un sistema de autenticación funcional utilizando el framework Laravel y el entorno de compilación Vite para la gestión de activos frontend.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Características del Proyecto
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* **Sistema de Registro**: Permite la creación de nuevos usuarios mediante validación de datos.
+* **Sistema de Login**: Acceso restringido para usuarios registrados con manejo de sesiones.
+* **Interfaz de Usuario**: Diseño basado en Bootstrap para una apariencia profesional y adaptable.
+* **Base de Datos Relacional**: Gestión de usuarios mediante tablas migradas en MySQL.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## Tecnologías Utilizadas
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* **Framework**: Laravel 11.x
+* **Lenguaje**: PHP 8.x
+* **Gestor de Paquetes**: Composer y NPM
+* **Motor de Plantillas**: Blade
+* **Compilador**: Vite
+* **Base de Datos**: MySQL (WampServer)
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## Instrucciones de Configuración y Ejecución
 
-## Agentic Development
+Para poner en marcha el proyecto en un entorno local, siga estos pasos:
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+1. **Instalación de Dependencias**:
+   Ejecute los siguientes comandos en la terminal del proyecto para instalar las librerías necesarias de PHP y Node.js:
+   ```bash
+   composer install
+   npm install
+Configuración de la Base de Datos:
+Cree una base de datos en su servidor local (phpMyAdmin) y actualice las credenciales en el archivo .env:
 
-```bash
-composer require laravel/boost --dev
+Fragmento de código
+DB_DATABASE=nombre_de_tu_bd
+DB_USERNAME=root
+DB_PASSWORD=
+Ejecución de Migraciones:
+Cree las tablas de autenticación en la base de datos:
 
-php artisan boost:install
-```
+Bash
+php artisan migrate
+Compilación de Estilos:
+Genere los archivos CSS y JS compilados para visualizar correctamente el diseño:
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+Bash
+npm run build
+Servidor de Aplicación:
+Inicie el servidor local de Laravel:
 
-## Contributing
+Bash
+php artisan serve
+Solución de Problemas Comunes
+Durante el desarrollo se presentaron los siguientes inconvenientes técnicos:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Política de Ejecución de Scripts: Se solucionó habilitando la política de ejecución en PowerShell para permitir el uso de comandos NPM.
 
-## Code of Conduct
+Visualización de Estilos: Se corrigió el error de carga de CSS ejecutando la compilación física mediante Vite (npm run build) y ajustando la URL del activo en el archivo de configuración.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Capturas de laravel
+<img width="1893" height="876" alt="image" src="https://github.com/user-attachments/assets/d282f93a-fc57-4024-8047-9cd9970a47bd" />
+<img width="1437" height="572" alt="image" src="https://github.com/user-attachments/assets/df0b28b9-0f48-454b-bec1-889fc7acc699" />
+<img width="1428" height="570" alt="image" src="https://github.com/user-attachments/assets/0480407d-a1f0-4c60-9783-7923575fadd3" />
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Datos del Estudiante
+Nombre: Samuel Ojo Ruiz
+
+Curso: Desarrollo de Software VII
+
+Facultad: Facultad de Ingeniería de Sistemas Computacionales
+
+Institución: Universidad Tecnológica de Panamá
